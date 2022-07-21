@@ -11,7 +11,7 @@ export default {
         {
             name: 'image',
             title: 'Image',
-            type: 'image',
+            type: 'string',
         },
     ],
 };
