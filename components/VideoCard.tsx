@@ -18,8 +18,6 @@ const VideoCard = ({ post }: IProps) => {
     const [isMuted, setIsMuted] = useState(false);
     const videoRef = useRef<HTMLVideoElement>(null);
 
-    console.log(post.video);
-
     const onVideoPress = () => {
         if (isPlaying) {
             videoRef?.current?.pause();
