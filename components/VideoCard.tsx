@@ -28,6 +28,12 @@ const VideoCard = ({ post }: IProps) => {
         }
     };
 
+    useEffect(() => {
+        if (videoRef?.current) {
+            videoRef.current.muted = isMuted;
+        }
+    }, [isMuted]);
+
     return (
         <div className='flex flex-col border-b-2 border-gray-200 pb-6'>
             <div>
