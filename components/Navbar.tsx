@@ -24,7 +24,9 @@ const Navbar = () => {
                     />
                 </div>
             </Link>
-            <div>SEARCH</div>
+            <div className='"relative hidden md:block'>
+                <form action=''></form>
+            </div>
 
             <div>
                 {userProfile ? (
