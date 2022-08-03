@@ -1,4 +1,3 @@
-import type { NextPage } from 'next';
 import axios from 'axios';
 import { Video } from '../types';
 import VideoCard from '../components/VideoCard';
@@ -37,7 +36,7 @@ export const getServerSideProps = async ({
 
     return {
         props: {
-            videos: data,
+            videos: response.data,
         },
     };
 };
